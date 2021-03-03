@@ -128,22 +128,22 @@ setInterval=()=>{
         
       
      
-      <img className="bgimg2" src={bg2} />
+      <img className="bgimg2" alt="" src={bg2} />
     
     <div style={{width:"100%",overflow:"hidden",position: "absolute",marginTop:"-390px"}}>
 <div ref={myref.ref} className="Back_ground">
 
-<img height="300px"  style={{marginLeft:"1350px"}} src={chess1} />
+<img height="300px"  alt="" style={{marginLeft:"1350px"}} src={chess1} />
 
-<img height="200px"  style={{marginLeft:"40px",marginTop:"40px ",position:"absolute" }} src={plam1} />
+<img height="200px" alt=""  style={{marginLeft:"40px",marginTop:"40px ",position:"absolute" }} src={plam1} />
 
-<img height="120px"  style={{marginLeft:"400px",marginTop:"160px ",position:"absolute" }} src={chess2} />
+<img height="120px" alt="" style={{marginLeft:"400px",marginTop:"160px ",position:"absolute" }} src={chess2} />
 
-<img height="120px"  style={{marginLeft:"1000px",marginTop:"160px ",position:"absolute" }}  src={droppudayda} />
+<img height="120px" alt="" style={{marginLeft:"1000px",marginTop:"160px ",position:"absolute" }}  src={droppudayda} />
 
-<img height="120px" style={{marginLeft:"1800px",marginTop:"160px ",position:"absolute" }} src={hourse} />
+<img height="120px" alt="" style={{marginLeft:"1800px",marginTop:"160px ",position:"absolute" }} src={hourse} />
 
-<img height="120px"   style={{marginLeft:"1950px",marginTop:"160px ",position:"absolute" }} src={plam2} />
+<img height="120px"  alt="" style={{marginLeft:"1950px",marginTop:"160px ",position:"absolute" }} src={plam2} />
 
 
      </div>
@@ -152,9 +152,9 @@ setInterval=()=>{
 <div ref={myref3.ref} className="Back_down">
 
 
-<img height="300px"  style={{marginLeft:"1190px",marginTop:"30px"}} src={plam3} />
+<img height="300px" alt=""  style={{marginLeft:"1190px",marginTop:"30px"}} src={plam3} />
 
-<img height="200px"  style={{marginLeft:"700px",marginTop:"120px ",position:"absolute" }} src={chess3} />
+<img height="200px" alt="" style={{marginLeft:"700px",marginTop:"120px ",position:"absolute" }} src={chess3} />
 
 
 
@@ -167,7 +167,7 @@ setInterval=()=>{
 
 
 <div className="Queen">
-<img height="700%" ref={myref2.ref}  style={{marginTop:"400px",overflow:"hidden"}} src={girlimg} />
+<img height="700%" ref={myref2.ref}  alt="" style={{marginTop:"400px",overflow:"hidden"}} src={girlimg} />
 </div>
 
 
