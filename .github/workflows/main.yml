@@ -30,6 +30,6 @@ jobs:
     - name: Create Build
       run: yarn build
     - name: installing Surge
-      run : npm install -g surge
+      run : npm install surge
     - name : Deploying  on Surge 
       run: surge ./build nasty-clam.surge.sh --token ${{secrets.TOKEN}} 
