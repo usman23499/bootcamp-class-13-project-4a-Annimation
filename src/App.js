@@ -13,10 +13,10 @@ import girlimg from "./images/sprite_running-alice-queen_small.png"
 
 
 import useWebAnimations from "@wellyshen/use-web-animations";
-import { useEffect } from 'react';
+import { useEffect,useState } from 'react';
 
 function App() {
-var speed=0;
+var [speed,setspeed]=useState(2);
 var queen= 1000
 
 useEffect(() => {
@@ -26,12 +26,13 @@ useEffect(() => {
   
     const interval = setInterval(() => {
       if(speed>2){
-        speed=speed-2;
+        setspeed(speed-2);
         myref2.getAnimation().updatePlaybackRate(speed)
         myref.getAnimation().updatePlaybackRate(speed)
         myref3.getAnimation().updatePlaybackRate(speed)
         console.log("Here we set Time for speed decrecess after 2sec if we incress the speed")
       }
+      console.log(speed)
     }, 2000);
     return () => clearInterval(interval);
     
@@ -56,10 +57,9 @@ useEffect(() => {
   
   const myref2 = useWebAnimations({
     keyframes: {
-      transform: 'translateY(0)' ,
+     
       transform: 'translateY(-100%)'   
      
-      
     },
     timing: {
       // delay: 5000, // Start with a 500ms delay
@@ -96,7 +96,8 @@ useEffect(() => {
 let  Clickfun=()=>{
  
 
-speed=speed+2;
+setspeed(speed+2)
+  
 if(speed>4){
   myref2.getAnimation().updatePlaybackRate(speed)
   myref.getAnimation().updatePlaybackRate(speed)
@@ -108,11 +109,11 @@ else{
   myref2.getAnimation().updatePlaybackRate(speed)
 }
 
-setInterval=()=>{
 
-}
 // paly bck initial 1 ye yebatate hai ke ab uper wale duration main kiten dafa chalna hai  
   }
+
+
 
   return (
     <div  onClick={()=>Clickfun()}>
