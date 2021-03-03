@@ -13,20 +13,13 @@ import girlimg from "./images/sprite_running-alice-queen_small.png"
 
 
 import useWebAnimations from "@wellyshen/use-web-animations";
-import { useEffect} from 'react';
+
 
 function App() {
 var speed=2;
 var queen= 1000
 
-useEffect(() => {
-  // Update the document title using the browser API
-  
 
-  
-    
-    
-});
 
   const myref = useWebAnimations({
     keyframes: {
