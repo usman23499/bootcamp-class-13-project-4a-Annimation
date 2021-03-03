@@ -22,7 +22,7 @@ jobs:
     - name: Setup Node.js environment
       uses: actions/setup-node@v2-beta
       with:
-        ver sion: 12
+        version: 12
     - name: Github for yarn
       uses:  Borales/actions-yarn@v2.1.0
       with:
@@ -30,6 +30,6 @@ jobs:
     - name: Create Build
       run: yarn build
     - name: installing Surge
-      run : npm install surge
+      run : npm install -g surge
     - name : Deploying  on Surge 
       run: surge ./build nasty-clam.surge.sh --token ${{secrets.TOKEN}} 
