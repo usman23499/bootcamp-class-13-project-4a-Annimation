@@ -13,10 +13,10 @@ import girlimg from "./images/sprite_running-alice-queen_small.png"
 
 
 import useWebAnimations from "@wellyshen/use-web-animations";
-import { useEffect,useState } from 'react';
+import { useEffect} from 'react';
 
 function App() {
-var [speed,setspeed]=useState(2);
+var speed=2;
 var queen= 1000
 
 useEffect(() => {
@@ -24,17 +24,7 @@ useEffect(() => {
   
 
   
-    const interval = setInterval(() => {
-      if(speed>2){
-        setspeed(speed-2);
-        myref2.getAnimation().updatePlaybackRate(speed)
-        myref.getAnimation().updatePlaybackRate(speed)
-        myref3.getAnimation().updatePlaybackRate(speed)
-        console.log("Here we set Time for speed decrecess after 2sec if we incress the speed")
-      }
-      console.log(speed)
-    }, 2000);
-    return () => clearInterval(interval);
+    
     
 });
 
@@ -96,7 +86,7 @@ useEffect(() => {
 let  Clickfun=()=>{
  
 
-setspeed(speed+2)
+speed=speed+2;
   
 if(speed>4){
   myref2.getAnimation().updatePlaybackRate(speed)
@@ -111,7 +101,24 @@ else{
 
 
 // paly bck initial 1 ye yebatate hai ke ab uper wale duration main kiten dafa chalna hai  
+
   }
+
+  const interval = setInterval(() => {
+    if(speed>2){
+      speed=speed-2;
+      myref2.getAnimation().updatePlaybackRate(speed)
+      myref.getAnimation().updatePlaybackRate(speed)
+      myref3.getAnimation().updatePlaybackRate(speed)
+      console.log("Here we set Time for speed decrecess after 2sec if we incress the speed")
+    }
+    if(speed<2){
+
+      clearInterval(interval);
+    }
+  }, 2000);
+
+
 
 
 
