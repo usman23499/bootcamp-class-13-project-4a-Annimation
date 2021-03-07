@@ -17,7 +17,7 @@ import useWebAnimations from "@wellyshen/use-web-animations";
 
 function App() {
 var speed=2;
-var queen= 1000
+
 
 
 
@@ -29,7 +29,7 @@ var queen= 1000
     },
     timing: {
       // delay: 5000, // Start with a 500ms delay
-      duration: 10000, // Run for 1000ms
+      duration: 18000, // Run for 1000ms
       iterations:Infinity, // Repeat once
       // direction:"", // Run the animation forwards and then backwards
       // easing: "ease-in-out", // Use a fancy timing function
@@ -51,7 +51,7 @@ var queen= 1000
       // direction:"", // Run the animation forwards and then backwards
       easing: "steps(7, start)", // mane start is lea kia hai q ke mere pass first ye he aarah hai
       direction: "reverse",
-      duration: queen,
+      duration: 1000,
       playbackRate: 1,
       
     },
@@ -61,13 +61,13 @@ var queen= 1000
 
  const myref3 = useWebAnimations({
     keyframes: {
-      transform: "translateX(-250%)", 
+      transform: "translateX(-100%)", 
      
       
     },
     timing: {
       // delay: 5000, // Start with a 500ms delay
-      duration: 8000, // Run for 1000ms
+      duration: 15000, // Run for 1000ms
       iterations: Infinity, // Repeat once
       // direction:"", // Run the animation forwards and then backwards
       // easing: "ease-in-out", // Use a fancy timing function
@@ -131,8 +131,8 @@ else{
      
       <img className="bgimg2" alt="" src={bg2} />
     
-    <div style={{width:"100%",overflow:"hidden",position: "absolute",marginTop:"-390px"}}>
-<div   className="Back_ground">
+    <div  style={{width:"100%",overflow:"hidden",position: "absolute",marginTop:"-390px"}}>
+<div  ref={myref.ref} className="Back_ground">
 
 <img height="300px"  alt="" style={{marginLeft:"1350px"}} src={chess1} />
 

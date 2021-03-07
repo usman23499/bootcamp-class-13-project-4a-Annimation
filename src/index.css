@@ -44,7 +44,7 @@ body{
 
 .Back_down{
   position: relative;;
-  z-index: 999;
+  z-index: 999999 !important;
   
   overflow: hidden; 
   min-width: 2600px;
