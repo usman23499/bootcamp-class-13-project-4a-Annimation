@@ -132,7 +132,7 @@ else{
       <img className="bgimg2" alt="" src={bg2} />
     
     <div style={{width:"100%",overflow:"hidden",position: "absolute",marginTop:"-390px"}}>
-<div ref={myref.ref} className="Back_ground">
+<div   className="Back_ground">
 
 <img height="300px"  alt="" style={{marginLeft:"1350px"}} src={chess1} />
 
